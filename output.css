@@ -803,6 +803,10 @@ video {
   height: 100vh;
 }
 
+.h-\[190px\] {
+  height: 190px;
+}
+
 .h-\[300px\] {
   height: 300px;
 }
@@ -1216,9 +1220,19 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -1262,6 +1276,11 @@ video {
 .text-custom3 {
   --tw-text-opacity: 1;
   color: rgb(191 153 119 / var(--tw-text-opacity));
+}
+
+.text-custom7 {
+  --tw-text-opacity: 1;
+  color: rgb(162 114 84 / var(--tw-text-opacity));
 }
 
 .text-orange-500 {
@@ -1376,12 +1395,6 @@ video {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hover\:scale-110:hover {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:bg-custom3:hover {
