@@ -31,4 +31,16 @@ window.onload = function() {
     document.addEventListener('mousemove', (e) => {
         cursor.style.transform = `translate(${e.clientX-24}px, ${e.clientY-20}px)`;
     });
+    document.querySelectorAll('.fillterButton').forEach(button => {
+        button.addEventListener('click', function() {
+            const category = this.getAttribute('data-fillter');
+            document.querySelectorAll('.card').forEach(card => {
+                if(category == 'all' || card.getAttribute('data-category') == category) {
+                    card.style.display = 'block';
+                }else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
 };

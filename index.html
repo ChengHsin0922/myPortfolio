@@ -28,30 +28,30 @@
     </section>
     <section class="relative pt-[100px] px-[100px] py-0 -mt-1 bg-custom2">
         <div class="container flex mx-auto mb-8 text-custom3 font-bold justify-center md:justify-start gap-4">
-            <a href="" class="relative px-5 py-1 no-underline bg-transparent text-xl md:text-2xl overflow-hidden clip-inset">
+            <button class="relative px-5 py-1 cursor-pointer bg-transparent text-xl md:text-2xl overflow-hidden clip-inset fillterButton" data-fillter="all">
                 <span class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-custom2 to-custom1 animate-animate1 animate-delay-1s"></span>
                 <span class="absolute top-0 right-0 w-[2px] h-full bg-gradient-to-b from-[cufrom-custom2to-custom1 animate-animate2"></span>
                 <span class="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-l from-custom2 to-custom1 animate-animate3 animate-delay-1s"></span>
                 <span class="absolute top-0 left-0 w-[2px] h-full bg-gradient-to-t from-custom2 to-custom1 animate-animate4"></span>
                 全部
-            </a>
-            <a href="" class="relative px-5 py-1 no-underline bg-transparent text-xl md:text-2xl overflow-hidden clip-inset">
+            </button>
+            <button class="relative px-5 py-1 cursor-pointer bg-transparent text-xl md:text-2xl overflow-hidden clip-inset fillterButton" data-fillter="project">
                 <span class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-custom2 to-custom1 animate-animate1 animate-delay-1s"></span>
                 <span class="absolute top-0 right-0 w-[2px] h-full bg-gradient-to-b from-custom2 to-custom1 animate-animate2"></span>
                 <span class="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-l from-custom2 to-custom1 animate-animate3 animate-delay-1s"></span>
                 <span class="absolute top-0 left-0 w-[2px] h-full bg-gradient-to-t from-custom2 to-custom1 animate-animate4"></span>
                 專題作品
-            </a>
-            <a href="" class="relative px-5 py-1 no-underline bg-transparent text-xl md:text-2xl overflow-hidden clip-inset">
+            </button>
+            <button class="relative px-5 py-1 cursor-pointer bg-transparent text-xl md:text-2xl overflow-hidden clip-inset fillterButton" data-fillter="layout">
                 <span class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-custom2 to-custom1 animate-animate1 animate-delay-1s"></span>
                 <span class="absolute top-0 right-0 w-[2px] h-full bg-gradient-to-b from-custom2 to-custom1 animate-animate2"></span>
                 <span class="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-l from-custom2 to-custom1 animate-animate3 animate-delay-1s"></span>
                 <span class="absolute top-0 left-0 w-[2px] h-full bg-gradient-to-t from-custom2 to-custom1 animate-animate4"></span>
                 切版作品
-            </a>
+            </button>
         </div>
         <div class="container mx-auto grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
-            <div class="card w-[300px] md:w-auto border-2 border-custom1 p-2 mr-5 mb-8 group">
+            <div class="card w-[300px] md:w-auto border-2 border-custom1 p-2 mr-5 mb-8 group" data-category="project">
                 <div>
                     <div class="border-2 border-custom1  h-[190px] w-full overflow-hidden">
                         <a href="https://chenghsin0922.github.io/Layout_practice3/" target="_blank"
@@ -63,7 +63,7 @@
                     <div class="p-2 mt-3 ">
                         <ul class="flex text-custom3 font-bold justify-between">
                             <li
-                                class="text-lg border border-custom1 px-4 py-1 cursor-pointer transition-all duration-500 hover:bg-custom3 hover:text-custom2">
+                                class="text-lg border-y border-custom1 px-4 py-1 pointer-events-none transition-all duration-500 hover:bg-custom3 hover:text-custom2">
                                 <p>專題作品</p>
                             </li>
                             <li class="text-base pointer-events-none">2024/04/30</li>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card w-[300px] md:w-auto border-2 border-custom1 p-2  mr-5 mb-8 group">
+            <div class="card w-[300px] md:w-auto border-2 border-custom1 p-2  mr-5 mb-8 group" data-category="layout">
                 <div>
                     <div class="border-2 border-custom1  h-[190px] overflow-hidden">
                         <a href="https://chenghsin0922.github.io/Layout_practice1/" target="_blank"
@@ -86,7 +86,7 @@
                     <div class="p-2 mt-3 "> 
                         <ul class="flex text-custom3 font-bold justify-between">
                             <li
-                                class="text-lg border border-custom1 px-4 py-1 cursor-pointer transition-all duration-500 hover:bg-custom3 hover:text-custom2">
+                                class="text-lg border-y border-custom1 px-4 py-1 pointer-events-none transition-all duration-500 hover:bg-custom3 hover:text-custom2">
                                 <p>切版作品</p>
                             </li>
                             <li class="text-base pointer-events-none">2024/09/02</li>
@@ -97,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card w-[300px] md:w-auto border-2 border-custom1 p-2  mr-5 mb-8 group">
+            <div class="card w-[300px] md:w-auto border-2 border-custom1 p-2  mr-5 mb-8 group" data-category="layout">
                 <div>
                     <div class="border-2 border-custom1  h-[190px] w-full overflow-hidden">
                         <a href="https://chenghsin0922.github.io/Layout_practice2/" target="_blank"
@@ -109,7 +109,7 @@
                     <div class="p-2 mt-3 ">
                         <ul class="flex text-custom3 font-bold justify-between">
                             <li
-                                class="text-lg border border-custom1 px-4 py-1 cursor-pointer transition-all duration-500 hover:bg-custom3 hover:text-custom2">
+                                class="text-lg border-y border-custom1 px-4 py-1 pointer-events-none transition-all duration-500 hover:bg-custom3 hover:text-custom2">
                                 <p>切版作品</p>
                             </li>
                             <li class="text-base pointer-events-none">2024/09/22</li>
@@ -120,7 +120,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card w-[300px] md:w-auto border-2 border-custom1 p-2  mr-5 mb-8 group">
+            <div class="card w-[300px] md:w-auto border-2 border-custom1 p-2  mr-5 mb-8 group" data-category="project">
                 <div>
                     <div class="border-2 border-custom1  h-[190px] w-full overflow-hidden">
                         <a href="https://chenghsin0922.github.io/Vue_project1/" target="_blank"
@@ -132,7 +132,7 @@
                     <div class="p-2 mt-3 ">
                         <ul class="flex text-custom3 font-bold justify-between">
                             <li
-                                class="text-lg border border-custom1 px-4 py-1 cursor-pointer transition-all duration-500 hover:bg-custom3 hover:text-custom2">
+                                class="text-lg border-y border-custom1 px-4 py-1 pointer-events-none transition-all duration-500 hover:bg-custom3 hover:text-custom2">
                                 <p>專題作品</p>
                             </li>
                             <li class="text-base pointer-events-none">2024/10/17</li>
@@ -143,7 +143,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card w-[300px] md:w-auto border-2 border-custom1 p-2  mr-5 mb-8 group">
+            <div class="card w-[300px] md:w-auto border-2 border-custom1 p-2  mr-5 mb-8 group" data-category="project">
                 <div>
                     <div class="border-2 border-custom1  h-[190px] w-full overflow-hidden">
                         <a href="https://chenghsin0922.github.io/Vue_project2/" target="_blank"
@@ -155,7 +155,7 @@
                     <div class="p-2 mt-3 ">
                         <ul class="flex text-custom3 font-bold justify-between">
                             <li
-                                class="text-lg border border-custom1 px-4 py-1 cursor-pointer transition-all duration-500 hover:bg-custom3 hover:text-custom2">
+                                class="text-lg border-y border-custom1 px-4 py-1 pointer-events-none transition-all duration-500 hover:bg-custom3 hover:text-custom2">
                                 <p>專題作品</p>
                             </li>
                             <li class="text-base pointer-events-none">2024/11/11</li>
